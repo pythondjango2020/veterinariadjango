@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import citaform
 
 # Create your views here.
 def vista_base(request):
@@ -14,4 +15,5 @@ def vista_index(request):
     return render(request, 'index.html')
 
 def vista_formulario(request):
-    return render(request, 'formulario.html')
+    cita_form = citaform()
+    return render(request, 'formulario.html',{'form':cita_form})
