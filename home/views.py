@@ -12,3 +12,6 @@ def vista_login(request):
 
 def vista_index(request):
     return render(request, 'index.html')
+
+def vista_formulario(request):
+    return render(request, 'formulario.html')

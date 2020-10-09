@@ -6,4 +6,5 @@ urlpatterns = [
     path('login/', vista_login, name = 'login'),
     path('register/', vista_register, name = 'register'),
     path('index/', vista_index, name = 'index'),
+    path('formulario/', vista_formulario, name = 'formulario'),
 ]
