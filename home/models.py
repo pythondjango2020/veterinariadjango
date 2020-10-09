@@ -6,9 +6,6 @@ class TipoMascota(models.Model):
     mascota = models.CharField(max_length=255)
     estado = models.IntegerField()
 
-    class Meta:
-        db_table = 'tipo_mascota'
-
     def __str__(self):
         return self.mascota
 
@@ -16,11 +13,8 @@ class TipoMascota(models.Model):
 class Raza(models.Model):
     raza = models.CharField(max_length=255)
     estado = models.IntegerField()
-    id_tipo = models.ForeignKey(TipoMascota, models.DO_NOTHING, db_column='id_tipo')
-
-    class Meta:
-        db_table = 'raza'
-
+    id_tipo = models.ForeignKey(TipoMascota, on_delete=models.PROTECT)
+    
     def __str__(self):
         return self.raza
 
@@ -30,9 +24,9 @@ class Citas(models.Model):
     edad = models.IntegerField()
     fecha = models.DateField()
     hora = models.TimeField()
-    amo = models.CharField(max_length=255)
+    dueño = models.CharField(max_length=255)
     estado = models.IntegerField()
-    raza = models.ForeignKey(Raza, models.DO_NOTHING, db_column='raza')
+    raza = models.ForeignKey(Raza, on_delete=models.PROTECT)
 
-    class Meta:
-        db_table = 'citas'
+    def __str__(self):
+        return self.mascota + ' ' +str(self.id)
