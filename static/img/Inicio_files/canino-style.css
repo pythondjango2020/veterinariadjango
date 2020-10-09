@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Abril Fatface', cursive;  
+}
+
+.mascotas {
+  display: flex;
+  justify-content: center;
+}
+
+.mascotas article{
+  margin: 20px;
+  padding-top: 50px;
+}
+
+.centrar{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.posicion{
+  margin-top: -150px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fondo{
+  background-color: lightblue;
+}
+
+.jumbotron{
+  background-color: transparent;
+}
+
+.fot{
+  width: 100px;
+}
+
+.espaciado{
+  margin-bottom: 80px;
+}
+.cubo{
+  width: 900px;
+  height: 500px;
+  margin: auto;
+}
+
+.tamaño{
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 800px;
+}
+
+.formulario{
+  margin-right: 700px;
+}
+
+.color_f{
+  background-color: rgb(223, 223, 226);
+}

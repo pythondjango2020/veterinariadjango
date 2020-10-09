@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+    {% block contenido %}
+    <!-- Contenido -->
+    <section>
+        <div class="login">
+            <div class="jumbotron">
+                <h1 class="display-4">Registrate</h1>
+                <hr class="my-4">
+                <div class="login_text">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Correo Electronico</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Ingrese su correo">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="exampleFormControlInput1">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Primer nombre">
+                            </div>
+                            <div class="col">
+                                <label for="exampleFormControlInput1">Apellidos</label>
+                                <input type="text" class="form-control" placeholder="Apelllido">
+                            </div>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin Contenido -->
+    {% endblock contenido %}
